@@ -1,4 +1,4 @@
-
+/* experiment 7
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,25 +6,172 @@ body {
 
 
 header {
-  background-color: #0d6efd;
-  color: white;
+  background-color: #1ada1a;
+  color: rgb(185, 195, 57);
   text-align: center;
   padding: 20px;
 }
 
 
 .content-box {
-  background-color: #f8f9fa;
+  background-color: #81afdd;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #841515;
   margin-bottom: 15px;
   border-radius: 8px;
 }
 
 footer {
-  background-color: #212529;
-  color: white;
+  background-color: #e41616;
+  color: rgb(239, 173, 7);
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+} */
+
+
+/* Page Background */
+body{
+    background-color: #f4e7d3;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #5c4033;
+    padding: 15px;
+}
+
+.navbar-brand{
+    color: #f8e4c9 !important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #f8e4c9 !important;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    color: #d2b48c !important;
+}
+
+/* Heading */
+h2{
+    color: #5c4033;
+    font-weight: bold;
+}
+
+/* Cards */
+.card{
+    border: 2px solid #8b6f47;
+    background-color: #fff8ee;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 100%;
+    padding: 10px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+/* Card Image */
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #8b6f47;
+}
+
+/* Card Title */
+.card-title{
+    color: #5c4033;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Price */
+.card h6{
+    margin-top: 10px;
+    color: #4b3832;
+}
+
+/* Button */
+.btn-primary{
+    background-color: #8b5e3c;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover{
+    background-color: #6f4e37;
+}
+
+/* Footer */
+footer{
+    background-color: #5c4033;
+    color: #f8e4c9;
+    margin-top: 30px;
+}
+
+/* Desktop Compatibility */
+@media screen and (min-width:1024px){
+
+    .card{
+        min-height: 430px;
+    }
+
+}
+
+/* Tablet Compatibility */
+@media screen and (max-width:768px){
+
+    .navbar-brand{
+        font-size: 25px;
+    }
+
+    .nav-link{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .card img{
+        height: 220px;
+    }
+
+}
+
+/* Mobile Compatibility */
+@media screen and (max-width:576px){
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .card img{
+        height: 180px;
+    }
+
+    .btn-primary{
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
 }
